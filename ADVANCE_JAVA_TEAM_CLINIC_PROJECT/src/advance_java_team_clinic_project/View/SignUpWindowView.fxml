@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="signUpPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1020.0" style="-fx-background-color: #385ca8;" stylesheets="@style.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="advance_java_team_clinic_project.Controller.SignUpWindowController">
+    <children>
+        <TextField fx:id="registerUsername" layoutX="268.0" layoutY="249.0" prefHeight="38.0" prefWidth="215.0" promptText="Username " styleClass="registerUsernameInput" stylesheets="@style.css" />
+        <PasswordField fx:id="registerPassword" layoutX="268.0" layoutY="307.0" prefHeight="38.0" prefWidth="215.0" promptText="Password " styleClass="registerPasswordInput" />
+        <PasswordField fx:id="confirmPassword" layoutX="268.0" layoutY="369.0" prefHeight="38.0" prefWidth="215.0" promptText="Confirm Password " styleClass="registerPasswordInput" />
+        <Button fx:id="registerBtn" layoutX="436.0" layoutY="469.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="129.0" styleClass="altSubmitBtn" stylesheets="@style.css" text="Sumbit" />
+        <ImageView fx:id="registerIcon" fitHeight="213.0" fitWidth="241.0" layoutX="415.0" layoutY="-34.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/hospital.png" />
+            </image>
+        </ImageView>
+        <Text fx:id="registerHeader" fill="WHITE" layoutX="501.0" layoutY="191.0" scaleX="3.0" scaleY="3.0" scaleZ="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up" />
+        <ImageView fx:id="backBtn" fitHeight="48.0" fitWidth="43.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="backBtn">
+            <image>
+                <Image url="@images/back.png" />
+            </image>
+        </ImageView>
+      <Text fill="WHITE" layoutX="588.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question 1:" wrappingWidth="161.77580642700195">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="FirstQuestionCombo" layoutX="588.0" layoutY="253.0" prefHeight="26.0" prefWidth="221.0" promptText="Select question :" />
+      <TextField fx:id="FirstAnswerQuestion" layoutX="588.0" layoutY="302.0" prefHeight="26.0" prefWidth="221.0" promptText="Answer." />
+      <Text fill="WHITE" layoutX="588.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question 2:" wrappingWidth="161.77580642700195">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="SecondQuestionCombo" layoutX="588.0" layoutY="373.0" prefHeight="26.0" prefWidth="221.0" promptText="Select question :" />
+      <TextField fx:id="SecondAnswerQuestion" layoutX="588.0" layoutY="422.0" prefHeight="26.0" prefWidth="221.0" promptText="Answer." />
+    </children>
+</Pane>

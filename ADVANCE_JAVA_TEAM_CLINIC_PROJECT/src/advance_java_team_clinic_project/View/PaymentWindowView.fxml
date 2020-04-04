@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="paymentPane" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="advance_java_team_clinic_project.Controller.PaymentWindowController">
+   <children>
+      <Text layoutX="54.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount to be paid:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="amountInput" layoutX="209.0" layoutY="126.0" prefHeight="23.0" prefWidth="155.0" promptText="Enter amount here..." />
+      <Button fx:id="submitBtn" layoutX="213.0" layoutY="193.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="75.0" styleClass="submitBtn" stylesheets="@style.css" text="Submit" />
+   </children>
+</AnchorPane>

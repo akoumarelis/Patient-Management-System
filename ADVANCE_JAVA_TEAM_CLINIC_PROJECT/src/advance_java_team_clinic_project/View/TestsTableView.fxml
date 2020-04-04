@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="testsPane" prefHeight="600.0" prefWidth="820.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="advance_java_team_clinic_project.Controller.TestsTableController">
+    <children>
+        <TableView fx:id="testsTable" layoutX="9.0" layoutY="199.0" prefHeight="297.0" prefWidth="880.0" />
+        <Text fill="#304e8e" layoutX="378.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TESTS">
+            <font>
+                <Font size="31.0" />
+            </font>
+        </Text>
+        <Button fx:id="backBtn" layoutX="344.0" layoutY="516.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="146.0" styleClass="backBtn" stylesheets="@style.css" text="Back">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+      <ComboBox fx:id="doctorComboBox" layoutX="14.0" layoutY="93.0" prefWidth="150.0" />
+      <Text fx:id="doctorHeader" layoutX="71.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor" />
+      <Text fx:id="patientHeader" layoutX="71.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient" />
+      <ComboBox fx:id="patientComboBox" layoutX="14.0" layoutY="156.0" prefWidth="150.0" />
+      <Text layoutX="271.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Created from " />
+      <Text layoutX="278.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Created to " />
+      <DatePicker fx:id="createdFromDate" layoutX="221.0" layoutY="93.0" />
+      <DatePicker fx:id="createdToDate" layoutX="221.0" layoutY="156.0" />
+      <ComboBox fx:id="paidComboBox" layoutX="435.0" layoutY="93.0" prefWidth="150.0" />
+      <Text layoutX="499.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Paid" />
+      <ComboBox fx:id="completedComboBox" layoutX="435.0" layoutY="156.0" prefWidth="150.0" />
+      <Text layoutX="483.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Completed" />
+      <Button fx:id="searchBtn" layoutX="653.0" layoutY="147.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="81.0" styleClass="appBtns" stylesheets="@style.css" text="Search" />
+      <Button fx:id="clearBtn" layoutX="657.0" layoutY="85.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="73.0" styleClass="cancelBtn" stylesheets="@style.css" text="Clear" />
+    </children>
+</AnchorPane>

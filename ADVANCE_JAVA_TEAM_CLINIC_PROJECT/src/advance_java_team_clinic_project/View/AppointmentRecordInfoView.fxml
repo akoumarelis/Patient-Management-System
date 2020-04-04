@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="idRecordPane" maxWidth="1020.0" minWidth="1020.0" prefHeight="680.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="advance_java_team_clinic_project.Controller.AppointmentRecordInfoController">
+    <children>
+        <GridPane layoutX="150.0" layoutY="100.0" prefHeight="500.0" prefWidth="700.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="APP DATE">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets left="30.0" top="70.0" />
+                    </GridPane.margin>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CODE">
+                    <GridPane.margin>
+                        <Insets left="30.0" />
+                    </GridPane.margin>
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="appCodeInput" maxWidth="170.0" minWidth="170.0" prefWidth="170.0">
+                    <GridPane.margin>
+                        <Insets left="115.0" />
+                    </GridPane.margin>
+                </TextField>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CREATED" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets left="30.0" top="100.0" />
+                    </GridPane.margin>
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="createdInput" maxWidth="170.0" minWidth="170.0" prefWidth="170.0" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets left="115.0" top="100.0" />
+                    </GridPane.margin>
+                </TextField>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="COMMENTS: " GridPane.rowIndex="2">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets bottom="110.0" left="30.0" top="50.0" />
+                    </GridPane.margin>
+                </Text>
+                <TextArea fx:id="commentsTextArea" maxHeight="100.0" minHeight="100.0" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="30.0" top="100.0" />
+               </GridPane.margin></TextArea>
+                <Button fx:id="backBtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="75.0" styleClass="backBtn" stylesheets="@style.css" text="Back" GridPane.rowIndex="3">
+                    <GridPane.margin>
+                        <Insets left="100.0" top="40.0" />
+                    </GridPane.margin>
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Button>
+                <Button fx:id="diagnoseInfoBtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" styleClass="appBtns" stylesheets="@style.css" text="Diagnose Info" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                    <GridPane.margin>
+                        <Insets left="50.0" top="40.0" />
+                    </GridPane.margin>
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Button>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DOCTOR" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets bottom="40.0" left="30.0" />
+                    </GridPane.margin>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PATIENT" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets left="30.0" top="30.0" />
+                    </GridPane.margin>
+                </Text>
+                <TextField fx:id="patientInput" maxWidth="170.0" minWidth="170.0" prefWidth="170.0" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets left="115.0" top="30.0" />
+                    </GridPane.margin>
+                </TextField>
+            <Text fill="#304e8e" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointment info" textAlignment="CENTER" GridPane.columnIndex="1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="150.0" left="30.0" />
+               </GridPane.margin>
+            </Text>
+            <ComboBox fx:id="doctorComboBox" maxWidth="170.0" minWidth="170.0" prefWidth="170.0" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="40.0" left="115.0" />
+               </GridPane.margin>
+            </ComboBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="HOUR" GridPane.rowIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="110.0" left="50.0" />
+               </GridPane.margin>
+            </Text>
+            <TextField fx:id="hourInput" maxWidth="170.0" minWidth="170.0" prefWidth="170.0" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="110.0" left="115.0" />
+               </GridPane.margin>
+            </TextField>
+            <Button fx:id="updateBtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" styleClass="updateBtn" stylesheets="@style.css" text="Update Info" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="40.0" top="40.0" />
+               </GridPane.margin>
+            </Button>
+            <DatePicker fx:id="appDateInput" maxWidth="170.0" minWidth="170.0" prefWidth="170.0">
+               <GridPane.margin>
+                  <Insets left="115.0" top="70.0" />
+               </GridPane.margin>
+            </DatePicker>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="editProfilePane" maxWidth="1020.0" minHeight="600.0" minWidth="1020.0" prefHeight="600.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="advance_java_team_clinic_project.Controller.EditProfileController">
+    <children>
+        <GridPane layoutX="100.0" prefHeight="82.0" prefWidth="820.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" GridPane.columnIndex="1" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username:">
+                    <GridPane.margin>
+                        <Insets left="180.0" />
+                    </GridPane.margin>
+                </Text>
+                <Button fx:id="passwordbtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" styleClass="editProfileBtns" stylesheets="@style.css" text="Change password" GridPane.columnIndex="1">
+                    <GridPane.margin>
+                        <Insets left="70.0" />
+                    </GridPane.margin>
+                </Button>
+                <Button fx:id="usernamebtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" styleClass="editProfileBtns" stylesheets="@style.css" text="Change Username">
+                    <GridPane.margin>
+                        <Insets left="250.0" />
+                    </GridPane.margin>
+                </Button>
+            </children>
+        </GridPane>
+        <GridPane fx:id="gridPane" layoutX="100.0" layoutY="80.0" prefHeight="410.0" prefWidth="820.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="AMKA: " GridPane.columnIndex="1">
+                    <GridPane.margin>
+                        <Insets left="10.0" />
+                    </GridPane.margin>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Code:">
+                    <GridPane.margin>
+                        <Insets left="100.0" />
+                    </GridPane.margin>
+                </Text>
+                <TextField fx:id="code" disable="true" maxWidth="100.0" minWidth="100.0" prefHeight="25.0" prefWidth="100.0" styleClass="editInputStyle">
+                    <GridPane.margin>
+                        <Insets left="150.0" />
+                    </GridPane.margin>
+                </TextField>
+                <TextField fx:id="amka" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" styleClass="editInputStyle" stylesheets="@style.css" GridPane.columnIndex="1">
+                    <GridPane.margin>
+                        <Insets left="60.0" />
+                    </GridPane.margin>
+                </TextField>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="AMA:" GridPane.columnIndex="2">
+                    <GridPane.margin>
+                        <Insets left="10.0" />
+                    </GridPane.margin>
+                </Text>
+                <TextField fx:id="ama" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" styleClass="editInputStyle" stylesheets="@style.css" GridPane.columnIndex="2">
+                    <GridPane.margin>
+                        <Insets left="50.0" />
+                    </GridPane.margin>
+                </TextField>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets left="20.0" />
+                    </GridPane.margin>
+                </Text>
+                <TextField fx:id="name" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" styleClass="editInputStyle" stylesheets="@style.css" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets left="60.0" />
+                    </GridPane.margin>
+                </TextField>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Surname:" wrappingWidth="53.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets left="10.0" />
+                    </GridPane.margin>
+                </Text>
+                <TextField fx:id="surname" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" styleClass="editInputStyle" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets left="70.0" />
+                    </GridPane.margin>
+                </TextField>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Profession:" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets left="20.0" />
+                    </GridPane.margin>
+                </Text>
+                <TextField fx:id="profession" maxWidth="170.0" minWidth="170.0" prefWidth="170.0" styleClass="editInputStyle" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets left="90.0" />
+                    </GridPane.margin>
+                </TextField>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nationality:" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets left="20.0" />
+                    </GridPane.margin>
+                </Text>
+                <ComboBox fx:id="comboNationality" prefWidth="150.0" styleClass="editCombobox" stylesheets="@style.css" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets left="90.0" />
+                    </GridPane.margin>
+                </ComboBox>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Place of Birth:" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets left="10.0" />
+                    </GridPane.margin>
+                </Text>
+                <TextField fx:id="placeOfBirth" maxWidth="170.0" minWidth="170.0" prefWidth="170.0" styleClass="editInputStyle" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets left="90.0" />
+                    </GridPane.margin>
+                </TextField>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth:" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets left="5.0" />
+                    </GridPane.margin>
+                </Text>
+                <DatePicker fx:id="dateOfBirth" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets left="80.0" />
+                    </GridPane.margin>
+                </DatePicker>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Father's Name:" GridPane.rowIndex="3">
+                    <GridPane.margin>
+                        <Insets left="190.0" />
+                    </GridPane.margin>
+                </Text>
+                <TextField fx:id="fathersName" maxWidth="150.0" minWidth="130.0" prefWidth="130.0" styleClass="editInputStyle" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mother's Name:" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <GridPane.margin>
+                        <Insets left="180.0" />
+                    </GridPane.margin>
+                </Text>
+                <TextField fx:id="mothersName" maxWidth="140.0" minWidth="140.0" prefWidth="140.0" styleClass="editInputStyle" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </TextField>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ROLE:" GridPane.rowIndex="5">
+                    <GridPane.margin>
+                        <Insets left="60.0" />
+                    </GridPane.margin>
+                </Text>
+                <ComboBox fx:id="comboRole" prefHeight="25.0" prefWidth="129.0" styleClass="editCombobox" stylesheets="@style.css" GridPane.rowIndex="5">
+                    <GridPane.margin>
+                        <Insets left="100.0" />
+                    </GridPane.margin>
+                </ComboBox>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gender:" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                    <GridPane.margin>
+                        <Insets left="50.0" />
+                    </GridPane.margin>
+                </Text>
+                <ComboBox fx:id="comboGender" prefHeight="25.0" prefWidth="150.0" styleClass="editCombobox" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                    <GridPane.margin>
+                        <Insets left="100.0" />
+                    </GridPane.margin>
+                </ComboBox>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Economic status:" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                    <GridPane.margin>
+                        <Insets left="20.0" />
+                    </GridPane.margin>
+                </Text>
+                <ComboBox fx:id="comboEcoStatus" prefWidth="140.0" styleClass="editCombobox" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                    <GridPane.margin>
+                        <Insets left="120.0" />
+                    </GridPane.margin>
+                </ComboBox>
+            <HBox fx:id="patientsBtns" maxWidth="820.0" minWidth="820.0" prefHeight="68.0" prefWidth="820.0" GridPane.rowIndex="4">
+               <children>
+                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address Details:" />
+                      <Button fx:id="addressbtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="174.0" styleClass="editProfileBtns" stylesheets="@style.css" text="Address details">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                      </Button>
+                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Details: ">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                      </Text>
+                      <Button fx:id="contactbtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="109.0" styleClass="editProfileBtns" stylesheets="@style.css" text="Contact details">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                      </Button>
+                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Insurance Details:">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                      </Text>
+                      <Button fx:id="insurancebtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" styleClass="editProfileBtns" stylesheets="@style.css" text="Insurance Details">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                      </Button>
+               </children>
+               <GridPane.margin>
+                  <Insets top="20.0" />
+               </GridPane.margin>
+            </HBox>
+            </children>
+        </GridPane>
+        <Button fx:id="cancelBtn" layoutX="300.0" layoutY="516.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="74.0" styleClass="cancelBtn" stylesheets="@style.css" text="Cancel" />
+        <Button fx:id="submitBtn" layoutX="700.0" layoutY="516.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="74.0" styleClass="submitBtn" stylesheets="@style.css" text="Submit" />
+    </children>
+</AnchorPane>

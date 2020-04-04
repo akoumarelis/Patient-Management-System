@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="loginPane" maxHeight="680.0" maxWidth="1200.0" minHeight="680.0" minWidth="1200.0" prefHeight="680.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="advance_java_team_clinic_project.Controller.LoginWindowController">
+    <children>
+        <AnchorPane fx:id="leftPane" minHeight="0.0" minWidth="0.0" prefHeight="680.0" prefWidth="350.0" styleClass="leftPane" stylesheets="@style.css">
+            <children>
+                <ImageView fitHeight="213.0" fitWidth="230.0" layoutX="62.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/hospital.png" />
+                    </image>
+                </ImageView>
+                <Text fill="WHITE" layoutX="33.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Management System" wrappingWidth="285.0">
+                    <font>
+                        <Font size="21.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="rightPane" layoutX="350.0" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="650.0">
+            <children>
+                <Button fx:id="loginBtn" layoutX="406.0" layoutY="285.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="140.0" styleClass="loginBtn" stylesheets="@style.css" text="Login" textFill="#385ca8">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="forgotBtn" layoutX="406.0" layoutY="347.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="140.0" styleClass="forgotBtn" stylesheets="@style.css" text="Forgot Password" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="registerBtn" layoutX="398.0" layoutY="457.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="155.0" styleClass="registerBtn" stylesheets="@style.css" text="Register" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="userNameTxtField" alignment="TOP_LEFT" layoutX="300.0" layoutY="192.0" prefHeight="33.0" prefWidth="350.0" promptText="Give Username..." styleClass="usernameInput" stylesheets="@style.css">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </TextField>
+                <Line endX="146.224609375" endY="-0.5" layoutX="319.0" layoutY="425.0" startX="-8.0" />
+                <Text layoutX="464.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" wrappingWidth="24.224609375">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <Line endX="182.0" layoutX="477.0" layoutY="424.0" startX="6.0" />
+                <Text fill="#385ca8" layoutX="440.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="73.13671875">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="53.0" fitWidth="58.0" focusTraversable="true" layoutX="449.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/user.png" />
+                    </image>
+                </ImageView>
+                <PasswordField fx:id="passWordField" alignment="TOP_LEFT" layoutX="300.0" layoutY="235.0" prefHeight="34.0" prefWidth="350.0" promptText="Give Password..." styleClass="passwordInput" stylesheets="@style.css">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </PasswordField>
+            </children>
+        </AnchorPane>
+    </children>
+</Pane>

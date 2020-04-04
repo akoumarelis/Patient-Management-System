@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="recordsPane" maxWidth="820.0" minHeight="600.0" minWidth="820.0" prefHeight="600.0" prefWidth="820.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="advance_java_team_clinic_project.Controller.AppointmentRecordsController">
+    <children>
+        <Text fx:id="textHead" fill="#385ca8" layoutX="399.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Text>
+        <TableView fx:id="recordsTable" layoutX="28.0" layoutY="319.0" prefHeight="200.0" prefWidth="765.0" />
+      <ComboBox fx:id="doctorComboBox" layoutX="30.0" layoutY="186.0" prefHeight="25.0" prefWidth="197.0" />
+      <ComboBox fx:id="patientComboBox" layoutX="30.0" layoutY="259.0" prefHeight="25.0" prefWidth="197.0" />
+      <Text fx:id="doctorHeader" layoutX="110.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor" />
+      <Text fx:id="patientHeader" layoutX="110.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient" />
+      <Text layoutX="359.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Created From" />
+      <DatePicker fx:id="createdFromDate" layoutX="308.0" layoutY="186.0" />
+      <Text layoutX="366.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Created To" />
+      <DatePicker fx:id="createdToDate" layoutX="308.0" layoutY="259.0" />
+      <Button fx:id="searchBtn" layoutX="717.0" layoutY="251.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="81.0" styleClass="appBtns" stylesheets="@style.css" text="Search" />
+      <ComboBox fx:id="appointmentsComboBox" layoutX="524.0" layoutY="186.0" prefHeight="25.0" prefWidth="174.0" />
+      <Text fx:id="appointmentsHeader" layoutX="573.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointments" />
+      <Button fx:id="clearBtn" layoutX="721.0" layoutY="107.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="72.0" styleClass="cancelBtn" stylesheets="@style.css" text="Clear" />
+      <Text layoutX="556.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointment Date" wrappingWidth="109.673828125" />
+      <DatePicker fx:id="appDate" layoutX="524.0" layoutY="259.0" prefHeight="25.0" prefWidth="174.0" />
+    </children>
+</AnchorPane>

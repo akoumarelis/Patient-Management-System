@@ -1,0 +1,255 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+/
+/ 
+    Created on : Nov 24, 2019, 7:51:08 PM
+    Author     : Chris
+*/
+
+.splitPane {
+    -fx-box-border: transparent;
+}
+
+.splitPane *.split-pane-divider {
+    -fx-padding: 0 1 0 1;
+}
+
+.leftPane {
+    -fx-background-color:#385ca8;
+}
+
+.loginBtn, .refreshBtn {
+    -fx-border-color:#385ca8;
+    -fx-border-radius: 10em;
+    -fx-background-color:#fff;
+    -fx-background-radius: 10em;
+    -fx-cursor: hand;
+}
+
+.loginBtn:hover, .refreshBtn:hover {
+    -fx-text-fill:fff;
+    -fx-background-color:#304e8e;
+}
+
+.forgotBtn {
+    -fx-background-color:#385ca8;
+    -fx-background-radius: 10em;
+    -fx-cursor: hand;
+}
+
+.forgotBtn:hover {
+    -fx-background-color:#162442;
+}
+
+.registerBtn {
+    -fx-background-color:#385ca8;
+    -fx-background-radius: 10em;
+    -fx-cursor: hand;
+}
+
+.registerBtn:hover {
+    -fx-background-color: #162442;
+}
+
+.homeBtn {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 18px;
+    -fx-text-fill: #fff;
+    -fx-cursor: hand;
+}
+
+.homeBtn:hover{
+    -fx-border-color:#fff;
+    -fx-border-width: 0 0 2 0;
+}
+
+
+
+/* ======SignUP View CSS====== */
+
+.submitBtn {
+    -fx-background-color:#fff;
+    -fx-cursor: hand;
+    -fx-text-fill: #385ca8;
+}
+
+.submitBtn:hover {
+    -fx-background-color:#ced9ef;
+}
+
+.backBtn {
+    -fx-cursor: hand;
+}
+
+/* ============================ */
+
+/*========LOGIN STYLE CSS =========*/
+.usernameInput, .passwordInput {
+    -fx-prompt-text-fill: #304e8e;
+    -fx-text-fill: #304e8e;
+    -fx-background-color: -fx-text-box-border, -fx-background;
+    -fx-background-insets: 1, 0 0 1 0 ;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent transparent #304e8e transparent;
+
+}
+
+.usernameInput:hover, .passwordInput:hover {
+    -fx-border-width: 0 0 2 0;
+}
+.usernameInput:focused, .passwordInput:focused {
+    -fx-prompt-text-fill:transparent;
+    -fx-text-fill: #304e8e;  
+    -fx-background-color: -fx-focus-color, -fx-background;
+    -fx-border-width: 0 0 2 0;
+}
+
+.registerUsernameInput, .registerPasswordInput {
+    -fx-prompt-text-fill:#fff;
+    -fx-text-fill: #fff;
+    -fx-background-color:  #385ca8;
+    -fx-border-color: transparent transparent #fff transparent;
+}
+
+.registerUsernameInput:hover, .registerPasswordInput:hover {
+    -fx-border-width: 0 0 2 0;
+}
+.registerUsernameInput:focused, .registerPasswordInput:focused {
+    -fx-prompt-text-fill: transparent;
+    -fx-border-width: 0 0 2 0;
+}
+
+/*=============================================*/
+
+
+
+
+/*==============SIDEBAR USERS==================*/
+.sidebar {
+    -fx-background-color: #385ca8;
+}
+
+.sidebarBtns {
+    -fx-text-fill: #fff;
+    -fx-background-color:#385ca8;
+    -fx-cursor: hand;
+}
+.sidebarBtns:hover {
+    -fx-background-color: #fff;
+    -fx-text-fill: #385ca8;
+}
+
+.sidebarBtns:selected {
+    -fx-background-color: #fff;
+    -fx-text-fill: #385ca8;
+}
+
+
+
+/* ============FOR ADMIN,CLINIC,DOCTOR ONLY==================*/
+.profileInfo {
+    -fx-border-width: 4 0 0 0;
+    -fx-border-color: #385ca8 transparent transparent transparent;
+    -fx-background-color: #fff;
+}
+
+
+/*=============================================*/
+
+
+/*==============EDIT PROFILE CSS==============*/
+
+.editProfileBtns, .submitBtn, .saveBtn {
+    -fx-background-color: #304e8e;
+    -fx-text-fill: #fff;
+    -fx-background-radius: 0.5em;
+    -fx-cursor: hand;
+}
+
+.editProfileBtns:hover, .submitBtn:hover, .saveBtn:hover {
+    -fx-background-color: #385ca8;
+}
+
+.submitBtn, .saveBtn {
+    -fx-background-radius: 2em;
+}
+
+.editCombobox {
+    -fx-background-radius: 1em;
+    -fx-text-fill: #385ca8;
+    -fx-cursor: hand;
+}
+
+
+.editInputStyle
+{
+    -fx-prompt-text-fill: #304e8e;
+    -fx-text-fill: #304e8e;
+    -fx-background-color: -fx-text-box-border, -fx-background;
+    -fx-background-insets: 1, 0 0 1 0 ;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent transparent #304e8e transparent;
+}
+
+
+
+/*=============================================*/
+/*================BUTTONS=====================*/
+.backBtn {
+   -fx-background-color: #808080;
+    -fx-text-fill: #fff;
+    -fx-background-radius: 2em;
+    -fx-cursor: hand;
+}
+
+.backBtn:hover {-fx-background-color: #aaa;}
+
+.createBtn, .updateBtn {
+    -fx-background-color: #0b0;
+    -fx-text-fill: #fff;
+    -fx-background-radius: 2em;
+    -fx-cursor: hand;
+}
+
+.deleteBtn, .cancelBtn {
+    -fx-background-color: #c0392b;
+    -fx-text-fill: #fff;
+    -fx-background-radius: 2em;
+    -fx-cursor: hand;
+}
+
+.deleteBtn:hover, .cancelBtn:hover{
+    -fx-background-color: #e74c3c;
+}
+
+.updateBtn {
+    
+}
+
+.appBtns {
+    -fx-background-color: #304e8e;
+    -fx-text-fill: #fff;
+    -fx-background-radius: 0.5em;
+    -fx-cursor: hand;
+}
+
+
+.altSubmitBtn {
+    -fx-background-color: #fff;
+    -fx-text-fill: #304e8e;
+    -fx-background-radius: 0.5em;
+    -fx-cursor: hand;
+}
+
+/*=============================================*/
+
+/*=============================================*/
+.table-column {
+  -fx-alignment: CENTER-RIGHT;
+}

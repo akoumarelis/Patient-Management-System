@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="advance_java_team_clinic_project.Controller.AddressDetailsController">
+    <children>
+        <Text fill="#385ca8" layoutX="210.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address Details">
+            <font>
+                <Font size="27.0" />
+            </font>
+        </Text>
+        <Text fill="#385ca8" layoutX="50.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" textAlignment="RIGHT" wrappingWidth="133.580078125">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Text fill="#385ca8" layoutX="50.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City:" textAlignment="RIGHT" wrappingWidth="133.580078125">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Text fill="#385ca8" layoutX="77.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="County:" textAlignment="RIGHT" wrappingWidth="103.580078125">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Text fill="#385ca8" layoutX="50.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Postal Code:" textAlignment="RIGHT" wrappingWidth="133.580078125">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <TextField fx:id="address" layoutX="200.0" layoutY="106.0" prefHeight="27.0" prefWidth="233.0" styleClass="editInputStyle" stylesheets="@style.css" />
+        <TextField fx:id="city" layoutX="200.0" layoutY="161.0" prefHeight="27.0" prefWidth="233.0" styleClass="editInputStyle" stylesheets="@style.css" />
+        <TextField fx:id="county" layoutX="200.0" layoutY="204.0" prefHeight="27.0" prefWidth="233.0" styleClass="editInputStyle" stylesheets="@style.css" />
+        <TextField fx:id="postalCode" layoutX="200.0" layoutY="255.0" prefHeight="27.0" prefWidth="233.0" styleClass="editInputStyle" stylesheets="@style.css" />
+        <Button fx:id="submitBtn" layoutX="248.0" layoutY="319.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="104.0" styleClass="submitBtn" stylesheets="@style.css" text="Submit" />
+    </children>
+</AnchorPane>

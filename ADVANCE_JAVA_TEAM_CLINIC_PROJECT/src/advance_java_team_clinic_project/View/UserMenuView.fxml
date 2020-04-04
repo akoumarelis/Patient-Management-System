@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane fx:id="userBorderPane" maxHeight="680.0" maxWidth="1200.0" minHeight="680.0" minWidth="1200.0" prefHeight="680.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="advance_java_team_clinic_project.Controller.UserMenuController">
+   <left>
+      <VBox fx:id="mainVBox" prefHeight="680.0" prefWidth="180.0" styleClass="sidebar" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="180.0">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/hospital.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="25.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <TextFlow fx:id="usernameTextFlow" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="usernameText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Logged in as ">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </TextFlow>
+               </children>
+            </VBox>
+            <VBox fx:id="buttonsVBox" prefHeight="400.0" prefWidth="100.0">
+               <children>
+                  <ToggleButton fx:id="profileBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" styleClass="sidebarBtns" stylesheets="@style.css" text="Profile">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ToggleButton>
+                  <ToggleButton fx:id="recordsBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" styleClass="sidebarBtns" stylesheets="@style.css" text="Records">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ToggleButton>
+                  <ToggleButton fx:id="editProfileBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" styleClass="sidebarBtns" stylesheets="@style.css" text="Edit Profile">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ToggleButton>
+                  <ToggleButton fx:id="enterNewUserBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" styleClass="sidebarBtns" stylesheets="@style.css" text="Enter New User">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ToggleButton>
+                  <ToggleButton fx:id="appointmentsBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" styleClass="sidebarBtns" stylesheets="@style.css" text="Appointments">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ToggleButton>
+                  <ToggleButton fx:id="makeAnAppointmentBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" styleClass="sidebarBtns" stylesheets="@style.css" text="Make an Appointment">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ToggleButton>
+                  <ToggleButton fx:id="testsBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" styleClass="sidebarBtns" stylesheets="@style.css" text="Tests">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ToggleButton>
+                  <ToggleButton fx:id="searchUserBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" styleClass="sidebarBtns" stylesheets="@style.css" text="Search User">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ToggleButton>
+                  <ToggleButton fx:id="parametricsBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" styleClass="sidebarBtns" stylesheets="@style.css" text="Parametrics">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ToggleButton>
+                  <ToggleButton fx:id="logoutBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" styleClass="sidebarBtns" stylesheets="@style.css" text="Logout">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ToggleButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
