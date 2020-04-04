@@ -9,9 +9,7 @@ Description :
 
   •	Also the hospital must maintain the information of the patients for n number of years and the episodic information.
 
-
 System Functions :
-
 
 Patient’s Information
 
@@ -28,9 +26,7 @@ Doctor’s Information
 
   •	The doctors’ availability times all are maintained in a separate file.
 
-
 Software Functions :
-
 
 Study of the Proposed System 
 
@@ -43,7 +39,6 @@ Study of the Proposed System
     4.	Secure
 Any incomplete or invalid data will not be accepted as there are thorough checks at each and every stage of all forms.
 The software will handle the following functions:
-
 
 Authorization
 
@@ -60,7 +55,6 @@ Patient Information
 
   •	Each patient is assigned to a particular doctor.
   
-
 Doctor’s and other staff Information
 
   •	Every doctor and staff member will be given a unique id.
@@ -74,9 +68,7 @@ Patient reports and bills
 
   •	The cost of each test is maintained.
 
-
 Functionalities of the modules:
-
 
 Login:
 
