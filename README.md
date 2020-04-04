@@ -2,26 +2,36 @@
 This project was created in the context of the course: « Plan Driven and Agile Programming » at Hellenic Mediterranean University by Zaka Ioannis, Koumarelis Anastasios and Babis Christos .
 
 Description :
+
 •	The project consists of Patient Management System (PMS) which is a part of Hospital Management System (HMS). This project contains seven modules namely-Admin, Receptionist, Doctor, Payment Counter, Clinic Center, Inpatient and Online Registration.
 
 •	Hospitals must need to maintain the information of the patients very accurately and up to date. The information helps the doctors to treat the patients very efficiently.
+
 •	Also the hospital must maintain the information of the patients for n number of years and the episodic information.
 
 System Functions :
 
 Patient’s Information
+
 •	The whole information regarding different activities in the hospital is entered in the registers manually for future verification.
+
 •	The patient details like Personal Information are all entered in registers. Each Patient’s information will be maintained in a separate file.
+
 •	If the patient gets any new ailments, their details, reports must be added to the previous information.
+
 •	All the information regarding the patient from entering the hospital to leaving the hospital must be maintained accurately.
 Doctor’s Information
+
 •	The information regarding all doctors and their qualifications, their personal details all are maintained in a separate file. Each doctor has a unique id.
+
 •	The doctors’ availability times all are maintained in a separate file.
 
 Software Functions :
 
 Study of the Proposed System 
+
 •	Collection of data in a standard format designed in an efficient way.
+
 •	Create a Database, which should be:
 1.	Integrated
 2.	Sharable
