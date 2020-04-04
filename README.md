@@ -3,6 +3,7 @@ This project was created in the context of the course: « Plan Driven and Agile 
 
 Description :
 •	The project consists of Patient Management System (PMS) which is a part of Hospital Management System (HMS). This project contains seven modules namely-Admin, Receptionist, Doctor, Payment Counter, Clinic Center, Inpatient and Online Registration.
+
 •	Hospitals must need to maintain the information of the patients very accurately and up to date. The information helps the doctors to treat the patients very efficiently.
 •	Also the hospital must maintain the information of the patients for n number of years and the episodic information.
 
