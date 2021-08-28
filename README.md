@@ -94,7 +94,7 @@ Receptionist:
 
       This module automates the day-to-day administrative activities and provides instant access to other modules, which leads to a better patient care.
 
-Docotr:
+Doctor:
 
       The doctor module is the important module of the Patient management system.
 
